@@ -17,15 +17,4 @@ export class JdController {
       data: createJdDto
     });
   }
-  @Get()
-  async all(@Res() res: Response) {
-    const jdList = await this.jdService.all();
-    res.status(HttpStatus.OK).send({
-      meta: {
-        code : 200,
-        message : "get all jd job successfully"
-      },
-      data: jdList
-    });
-  }
 }
