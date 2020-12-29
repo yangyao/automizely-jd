@@ -1,0 +1,62 @@
+version: '3.1'
+services:
+  '223232':
+    image: akyakya/jd_scripts
+    container_name: jd_scripts_223232
+    restart: always
+    volumes:
+      - './logs_223232:/scripts/logs'
+    tty: true
+    environment:
+      - JD_COOKIE=pt_key=2323;pt_pin=223232
+      - PUSH_KEY=232323
+  '232223':
+    image: akyakya/jd_scripts
+    container_name: jd_scripts_232223
+    restart: always
+    volumes:
+      - './logs_232223:/scripts/logs'
+    tty: true
+    environment:
+      - JD_COOKIE=pt_key=;pt_pin=232223
+      - PUSH_KEY=
+  3w33:
+    image: akyakya/jd_scripts
+    container_name: jd_scripts_3w33
+    restart: always
+    volumes:
+      - './logs_3w33:/scripts/logs'
+    tty: true
+    environment:
+      - JD_COOKIE=pt_key=;pt_pin=3w33
+      - PUSH_KEY=
+  3e:
+    image: akyakya/jd_scripts
+    container_name: jd_scripts_3e
+    restart: always
+    volumes:
+      - './logs_3e:/scripts/logs'
+    tty: true
+    environment:
+      - JD_COOKIE=pt_key=;pt_pin=3e
+      - PUSH_KEY=
+  yao:
+    image: akyakya/jd_scripts
+    container_name: jd_scripts_yao
+    restart: always
+    volumes:
+      - './logs_yao:/scripts/logs'
+    tty: true
+    environment:
+      - JD_COOKIE=pt_key=yang;pt_pin=yao
+      - PUSH_KEY=yangyao
+  form:
+    image: akyakya/jd_scripts
+    container_name: jd_scripts_form
+    restart: always
+    volumes:
+      - './logs_form:/scripts/logs'
+    tty: true
+    environment:
+      - JD_COOKIE=pt_key=form;pt_pin=form
+      - PUSH_KEY=form
