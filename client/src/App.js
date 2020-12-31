@@ -62,15 +62,15 @@ class JobForm extends React.Component {
         </Modal>
       <Form onSubmit={this.handleSubmit}>
       <Form.Group controlId="formPTKEY">
-        <Form.Label>输入你的 pt_key</Form.Label>
+        <Form.Label>输入 Cookie 中的 pt_key</Form.Label>
         <Form.Control name="pt_key" type="text" placeholder="Enter PT_KEY" />
       </Form.Group>
       <Form.Group controlId="formPTPIN">
-        <Form.Label>输入你的 pt_pin</Form.Label>
+        <Form.Label>输入 Cookie 中的 pt_pin</Form.Label>
         <Form.Control name="pt_pin" type="text" placeholder="Enter PT_PIN" />
       </Form.Group>
       <Form.Group controlId="formSCKEY">
-        <Form.Label>输入你的 sc_key</Form.Label>
+        <Form.Label>输入你 server酱 API key <a href='http://sc.ftqq.com/3.version'  target="blank">传送门</a></Form.Label>
         <Form.Control name="sc_key" type="text" placeholder="Enter SC_KEY" />
       </Form.Group>
       <Button variant="primary" type="submit">
