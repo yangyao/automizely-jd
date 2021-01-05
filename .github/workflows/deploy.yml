@@ -20,7 +20,13 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          cd ~/node-github-demo
+        script: |
+          cd /var/www/automizely-jd
           git pull origin master
+          cd /var/www/automizely-jd/client
           npm install --production
-          pm2 restart node-app
+          yarn build
+          cd /var/www/automizely-jd/server
+          npm install --production
+          yarn build
+          pm2 restart automizely-jd
